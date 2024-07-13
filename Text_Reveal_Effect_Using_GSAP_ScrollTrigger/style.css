@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitter", serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.one {
+  width: 100%;
+  height: 100vh;
+  background-color: #222;
+}
+.two {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.three {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  left: 20%;
+  opacity: 0.2;
+}
+.text-hover {
+  position: absolute;
+  left: 20%;
+  opacity: 1;
+}
+
+.text h1,
+.text-hover h1 {
+  font-size: 5vw;
+  font-weight: 400;
+}
+.text h2,
+.text-hover h2 {
+  font-size: 5vw;
+  font-weight: 400;
+
+}
+.text-hover h1 {
+  width: 0%;
+  text-wrap: nowrap;
+  overflow: hidden;
+}
+.text-hover h2 {
+  width: 0%;
+  text-wrap: nowrap;
+  overflow: hidden;
+}
+.text-three {
+    position: absolute;
+    left: 20%;
+    opacity: 0.2;
+  }
+  .text-three-hover {
+    position: absolute;
+    left: 20%;
+    opacity: 1;
+  }
+.text-three h1,
+.text-three-hover h1 {
+  font-size: 5vw;
+  font-weight: 400;
+}
+.text-three h2,
+.text-three-hover h2 {
+  font-size: 5vw;
+  font-weight: 400;
+
+}
+.text-three-hover h1 {
+  width: 0%;
+  text-wrap: nowrap;
+  overflow: hidden;
+}
+.text-three-hover h2 {
+  width: 0%;
+  text-wrap: nowrap;
+  overflow: hidden;
+}

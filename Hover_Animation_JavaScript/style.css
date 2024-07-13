@@ -1,0 +1,182 @@
+@font-face {
+  font-family: FraktionMono;
+  src: url(./FraktionMono-Regular.ttf);
+}
+@font-face {
+  font-family: Kesseler;
+  src: url(./Kesseler-Super-Display.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.left {
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  width: 40%;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-center {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.bottom-center {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.center h1 {
+  font-size: 10vw;
+  font-family: Kesseler;
+  text-align: center;
+  line-height: 17vh;
+  font-weight: 400;
+}
+
+.txt h3 {
+  font-family: FraktionMono;
+  font-size: 0.9vw;
+  font-weight: 400;
+  text-align: center;
+}
+
+.center-txt-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.right {
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: FraktionMono;
+  padding: 0.1vw 1vw;
+  border-radius: 50px;
+  border: 1px solid black;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+.btn h3 {
+  font-size: 0.9vw;
+  font-weight: 400;
+}
+
+.center-one {
+  height: 0vh;
+  width: 100%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+}
+.center-two {
+  height: 0vh;
+  width: 100%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+}
+
+.img-all {
+  position: absolute;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  pointer-events: none;
+  background-position: center;
+  background-size: cover;
+}
+
+.img-one {
+  width: 25vw;
+  height: 25vh;
+  bottom: 55%;
+  right: 52%;
+  opacity: 0;
+}
+
+.img-two {
+  width: 20vw;
+  height: 20vh;
+  top: 60%;
+  right: 40%;
+  opacity: 0;
+}
+.img-three {
+  width: 20vw;
+  height: 20vh;
+  top: 35%;
+  right: 30%;
+  opacity: 0;
+}
+.img-four {
+  width: 15vw;
+  height: 15vh;
+  bottom: 40%;
+  left: 42%;
+  opacity: 0;
+}
+
+#img1 {
+  background-image: url(https://images.unsplash.com/photo-1719317575693-755c9059b57d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwzMzU1NzY4fHxlbnwwfHx8fHw%3D);
+}
+#img2 {
+  background-image: url(https://images.unsplash.com/photo-1719961738545-0dbf4a66d9fa?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+#img3 {
+  background-image: url(https://plus.unsplash.com/premium_photo-1712852504054-e36ae925fd18?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+#img4 {
+  background-image: url(https://images.unsplash.com/photo-1716046155960-740f428ce036?q=80&w=2043&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+#img5 {
+  background-image: url(https://images.unsplash.com/photo-1542907815-d27fc5649ba8?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+#img6 {
+  background-image: url(https://plus.unsplash.com/premium_photo-1682535208615-11777d244e3c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG90JTIwYmlraW5pfGVufDB8fDB8fHww);
+}
+
+#img7 {
+  background-image: url(https://images.unsplash.com/photo-1558906373-b51f9677c422?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+#img8 {
+  background-image: url(https://images.unsplash.com/photo-1563393934034-21b781d905ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}

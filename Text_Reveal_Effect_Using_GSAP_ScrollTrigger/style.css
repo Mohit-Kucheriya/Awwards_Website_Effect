@@ -31,15 +31,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-.three {
-  width: 100%;
-  height: 100vh;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
+
 
 .text {
   position: absolute;
@@ -102,5 +94,14 @@ body {
 .text-three-hover h2 {
   width: 0%;
   text-wrap: nowrap;
+  overflow: hidden;
+}
+.three {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
   overflow: hidden;
 }

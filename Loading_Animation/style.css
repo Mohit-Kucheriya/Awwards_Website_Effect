@@ -1,0 +1,119 @@
+@font-face {
+  font-family: font1;
+  src: url(./Fonts/chaney-ultraextended-webfont.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+}
+
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #8274ad;
+  animation: loader 4s;
+}
+
+.loaderh1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-7deg);
+  font-size: 12vw;
+  font-family: font1;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #fff;
+  font-weight: 200;
+  outline: none;
+}
+
+.scramble {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-7deg);
+  font-size: 5vw;
+  color: #fff;
+  font-family: font1;
+}
+.loading {
+  position: relative;
+  width: 50%;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%) rotate(-7deg);
+  height: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.loading::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  bottom: 10%;
+  border-radius: 5px;
+  animation: loading 4s;
+}
+@keyframes loading {
+  0% {
+    width: 0%;
+    background-color: #ffd6dd;
+  }
+  20% {
+    width: 20%;
+    background-color: #fabed4;
+  }
+  40% {
+    width: 40%;
+    background-color: #f49cc8;
+  }
+  60% {
+    width: 60%;
+    background-color: #cf8bbb;
+  }
+  80% {
+    width: 100%;
+    background-color: #9b81b5;
+  }
+  100% {
+    width: 100%;
+    background-color: #8274ad;
+  }
+}
+@keyframes loader {
+  0% {
+    background-color: #ffd6dd;
+  }
+  20% {
+    background-color: #fabed4;
+  }
+  40% {
+    background-color: #f49cc8;
+  }
+  60% {
+    background-color: #cf8bbb;
+  }
+  80% {
+    background-color: #9b81b5;
+  }
+  100% {
+    background-color: #8274ad;
+  }
+}

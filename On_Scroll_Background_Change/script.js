@@ -2,7 +2,7 @@ function backgroundColorChange() {
     var tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#two",
-            markers: true,
+            // markers: true,
             start: "0 0",
             end: "5% 0",
             scrub: 1,
@@ -17,7 +17,7 @@ function backgroundColorChange() {
     var tl2 = gsap.timeline({
         scrollTrigger: {
             trigger: "#two",
-            markers: true,
+            // markers: true,
             start: "70% 0",
             end: "75% 0",
             scrub: 1,

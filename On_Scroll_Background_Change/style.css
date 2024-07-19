@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 1vw 2vw;
+}
+
+#one .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3vw;
+}
+
+.content h1 {
+  font-size: 5vw;
+  text-align: center;
+}
+
+.content img {
+  height: 400px;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  border-radius: 20px;
+}
+.content img:hover {
+  transform: scale(1.05);
+}
+
+#two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-two {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+  padding-left: 10vw;
+  padding-right: 5vw;
+  gap: 3vh;
+}
+
+.left h2 {
+  font-size: 3.5vw;
+}
+
+.left p {
+  font-size: 1.3vw;
+  text-align: justify;
+  line-height: 1.8vw;
+}
+
+.left button {
+  height: 2vw;
+  width: 8vw;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  margin-top: 2vh;
+}
+
+.right {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.img1 {
+  width: 19vw;
+  height: 60vh;
+  border-radius: 20px;
+  background-color: #fafafa;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.img2 {
+  top: 10%;
+  left: 15%;
+  position: absolute;
+  width: 18vw;
+  height: 60vh;
+  border-radius: 20px;
+  background-image: url("https://images.hdqwalls.com/wallpapers/sydney-sweeney-kerastase-premiere-campaign-2024-9f.jpg");
+  background-position: center;
+  background-size: cover;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+.img3 {
+  bottom: 15%;
+  right: 20%;
+  position: absolute;
+  width: 16vw;
+  height: 22vh;
+  border-radius: 20px;
+  background-image: url("https://images.hdqwalls.com/wallpapers/sydney-sweeney-edge-collection-3j.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+#three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content3 {
+  flex-direction: row-reverse;
+}
+#content3 .right .img2 {
+  background-image: url("https://images.hdqwalls.com/wallpapers/2014-sydney-sweeney-10k-md.jpg");
+}
+#content3 .right .img3 {
+  background-image: url("https://images.hdqwalls.com/wallpapers/sydney-sweeney-david-yurman-cable-edge-collection-4k-oz.jpg");
+}

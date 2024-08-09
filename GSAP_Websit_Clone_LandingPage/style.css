@@ -1,0 +1,153 @@
+@font-face {
+  font-family: Regular;
+  src: url(./Fonts/PPMori-Regular.otf);
+}
+@font-face {
+  font-family: SemiBold;
+  src: url(./Fonts/PPMori-SemiBold.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #0e100f;
+}
+
+nav {
+  width: 90%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-family: Regular;
+  border-bottom: 0.05rem solid #50504e;
+}
+
+nav .left,
+nav .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+nav .left img {
+  height: 30px;
+}
+
+nav .left ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav .left ul li a,
+nav .right a {
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #7c7c6f;
+  height: 100%;
+  transition: color cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+  padding: 1rem 0;
+}
+
+nav .left ul li a:hover,
+nav .right a:hover {
+  color: #fffce1;
+}
+
+.right .btn {
+  all: unset;
+  border: 2px solid #fffce1;
+  color: #fffce1;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+}
+
+.right .btn:hover {
+  background-color: #fffce1;
+  color: #0e100f;
+}
+
+#main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fffce1;
+}
+
+#page1 {
+  width: 90%;
+  height: 100vh;
+  font-family: SemiBold;
+  font-size: 8vw;
+  position: relative;
+  margin: auto 0;
+}
+
+#page1 .text1 {
+  text-align: left;
+  margin-top: 100px;
+}
+
+#page1 .svg1 {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 6%;
+  left: 14%;
+  animation: svgRotate infinite linear 1.5s;
+}
+
+@keyframes svgRotate {
+  0%,
+  25% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#page1 .text2 {
+  text-align: right;
+  margin-top: -30px;
+}
+
+#page1 .img1 {
+  position: absolute;
+  height: 150px;
+  right: 29%;
+  bottom: 15%;
+  z-index: -1;
+  animation: imgMoving 1.5s linear infinite alternate;
+}
+
+@keyframes imgMoving {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: rotate(25deg);
+  }
+}

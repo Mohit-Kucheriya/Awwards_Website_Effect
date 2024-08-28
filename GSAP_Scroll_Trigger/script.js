@@ -16,3 +16,6 @@ tl.to(".stripe-right", {
     marginLeft: "-50%"
 }, "text")
 
+
+
+
